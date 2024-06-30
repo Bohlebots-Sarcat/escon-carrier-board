@@ -694,6 +694,198 @@
 				)
 			)
 		)
+		(symbol "bohlebots.lib:GND"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "bohlebots.lib:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "pwr"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 		(symbol "main_backupboard-eagle-import:B8B-PH-K"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1009,20 +1201,10 @@
 		)
 	)
 	(junction
-		(at 40.64 38.1)
+		(at 30.48 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "890d0452-34e6-4350-9be3-d42c3806ab50")
-	)
-	(wire
-		(pts
-			(xy 40.64 38.1) (xy 43.18 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0b0fb617-dedd-42b6-a3ab-137490c5a5b6")
+		(uuid "2179859b-1a40-40d5-9828-149990914472")
 	)
 	(wire
 		(pts
@@ -1056,6 +1238,16 @@
 	)
 	(wire
 		(pts
+			(xy 30.48 38.1) (xy 29.21 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1850f25d-25d4-4c84-80d1-ea51f72c28e6")
+	)
+	(wire
+		(pts
 			(xy 71.12 30.48) (xy 81.28 27.94)
 		)
 		(stroke
@@ -1066,16 +1258,6 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 38.1) (xy 58.42 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "40072792-83e5-47e6-b455-a080c25257bc")
-	)
-	(wire
-		(pts
 			(xy 40.64 27.94) (xy 43.18 25.4)
 		)
 		(stroke
@@ -1083,16 +1265,6 @@
 			(type default)
 		)
 		(uuid "484b470c-d2c4-4f79-acf3-a166e6a4d604")
-	)
-	(wire
-		(pts
-			(xy 60.96 35.56) (xy 81.28 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "55bec439-74e4-45aa-a0c6-70ac2d396fec")
 	)
 	(wire
 		(pts
@@ -1116,16 +1288,6 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 38.1) (xy 40.64 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "86fc5d67-4d9a-4ebe-a0bd-79aeebf82800")
-	)
-	(wire
-		(pts
 			(xy 40.64 33.02) (xy 43.18 30.48)
 		)
 		(stroke
@@ -1133,16 +1295,6 @@
 			(type default)
 		)
 		(uuid "8c5e2066-1bdb-4bb4-933b-3cecdaaac039")
-	)
-	(wire
-		(pts
-			(xy 58.42 38.1) (xy 60.96 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d271a2f-1dbc-4dd6-8354-2e418da97e75")
 	)
 	(wire
 		(pts
@@ -1163,6 +1315,16 @@
 			(type default)
 		)
 		(uuid "a07405af-4a0b-46e3-8293-7cff1ccd73c7")
+	)
+	(wire
+		(pts
+			(xy 30.48 38.1) (xy 30.48 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aea45150-48d8-4cc1-b9cf-81eca054afc8")
 	)
 	(wire
 		(pts
@@ -1321,9 +1483,75 @@
 			(uuid "3cc486b1-b79e-4b8c-bae5-85bdb39f7b22")
 		)
 		(instances
-			(project ""
+			(project "escon-carrier-board"
 				(path "/92c42422-b927-4b81-be56-0250212e9826"
 					(reference "ESCON1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "bohlebots.lib:GND")
+		(at 43.18 40.64 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "34b68efb-9569-4a1d-ad97-d1cb402c1b46")
+		(property "Reference" "#PWR02"
+			(at 43.18 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 43.18 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 43.18 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 43.18 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 43.18 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "96e8bb63-4ab0-4b82-921c-f166476ab11c")
+		)
+		(instances
+			(project "escon-carrier-board"
+				(path "/92c42422-b927-4b81-be56-0250212e9826"
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -1340,7 +1568,7 @@
 		(dnp no)
 		(uuid "360c5418-c795-4e9b-86b7-7959fc18d313")
 		(property "Reference" "J1"
-			(at 24.13 44.45 0)
+			(at 22.098 43.942 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1348,7 +1576,7 @@
 			)
 		)
 		(property "Value" "Conn_01x06"
-			(at 24.13 41.91 0)
+			(at 22.098 41.402 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1401,9 +1629,76 @@
 			(uuid "8d759f49-5116-4372-97c0-520ebea81546")
 		)
 		(instances
-			(project ""
+			(project "escon-carrier-board"
 				(path "/92c42422-b927-4b81-be56-0250212e9826"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "bohlebots.lib:GND")
+		(at 81.28 35.56 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "377c67e8-684e-414b-bba6-b5313836f973")
+		(property "Reference" "#PWR03"
+			(at 74.93 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 77.47 35.5599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 81.28 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d134726c-e36c-4741-82af-03abe82e599c")
+		)
+		(instances
+			(project "escon-carrier-board"
+				(path "/92c42422-b927-4b81-be56-0250212e9826"
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -1464,9 +1759,76 @@
 			)
 		)
 		(instances
-			(project ""
+			(project "escon-carrier-board"
 				(path "/92c42422-b927-4b81-be56-0250212e9826"
 					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "bohlebots.lib:GND")
+		(at 30.48 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9ce69db6-19ed-471c-b4d3-98ddf03591a1")
+		(property "Reference" "#PWR01"
+			(at 36.83 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 34.29 38.0999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 30.48 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "836b7fcd-4ab3-4f75-b5a3-e31ab4131464")
+		)
+		(instances
+			(project "escon-carrier-board"
+				(path "/92c42422-b927-4b81-be56-0250212e9826"
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -1617,6 +1979,72 @@
 			(project "escon-carrier-board"
 				(path "/92c42422-b927-4b81-be56-0250212e9826"
 					(reference "JP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "bohlebots.lib:PWR_FLAG")
+		(at 30.48 40.64 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fd5b1f36-8536-4450-a9b0-76893b99614f")
+		(property "Reference" "#FLG01"
+			(at 30.48 42.545 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 30.48 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 30.48 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 30.48 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bd2ad7ce-552f-4d0b-a548-10b274b81488")
+		)
+		(instances
+			(project "escon-carrier-board"
+				(path "/92c42422-b927-4b81-be56-0250212e9826"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
